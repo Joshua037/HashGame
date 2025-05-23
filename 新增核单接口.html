@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>新增核单接口</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/新增核单接口/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.7.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/新增核单接口/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u21448" class="ax_default _文本段落">
+        <div id="u21448_div" class=""></div>
+        <div id="u21448_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;">场景说明：</span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">增加 api，用于核对拉单接口中的数据准确性；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">核单的方式主要是通过核单接口的汇总数据，例如单量，总投注额，总输赢额等。</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">将上述的数据，与后台或其他接口获取的投注，金额数据做比对。如果出现偏差则说明有异常，需要请技术进一步确认解决。</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">例如：</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">某日投注记录报表，通过手动统计总共 1000条数据，总投注额50000元；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">而核单API同一天的汇总单量为1002，总投注500500元，说明投注记录报表可能出现了遗漏；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;">需求说明：</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">每次只能请求1天（且是昨天及之前）的数据；</span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;">请求接口时需要告知请求的订单的状态范围（全部，已取消，已结算）</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">由于时统计昨日的数据所以不存在未结算的注单；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">接口需要回传数据包括：</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">商户ID </span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">上级商户ID</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">报表时间（请求的日期）</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">投注单量（请求范围内的，投注订单数量）</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">总投注额（请求范围内的，订单投注金额总和）</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">总输赢额（请求范围内的，返奖总额-用户实际投注总额）</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">有效投注额（请求范围内的，有效投注字段的金额总和）</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u21449" class="ax_default image">
+        <img id="u21449_img" class="img " src="images/新增核单接口/u21449.png"/>
+        <div id="u21449_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u21450" class="ax_default image">
+        <img id="u21450_img" class="img " src="images/新增核单接口/u21450.png"/>
+        <div id="u21450_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u21451" class="ax_default image">
+        <img id="u21451_img" class="img " src="images/新增核单接口/u21451.png"/>
+        <div id="u21451_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u21452" class="ax_default image">
+        <img id="u21452_img" class="img " src="images/新增核单接口/u21452.png"/>
+        <div id="u21452_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u21453" class="ax_default _文本段落">
+        <div id="u21453_div" class=""></div>
+        <div id="u21453_text" class="text ">
+          <p><span>真人相关接口参考</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u21454" class="ax_default _一级标题">
+        <div id="u21454_div" class=""></div>
+        <div id="u21454_text" class="text ">
+          <p><span>请求接口的 状态范围字段描述中 增加如下说明：</span></p><p><span>目前核弹接口中请求的全部订单只包含 已结算 与 已取消的订单，不含结算中的订单数据；</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>

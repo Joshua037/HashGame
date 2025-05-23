@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>API优化</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/api优化_1/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.7.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/api优化_1/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1930" class="ax_default _一级标题">
+        <div id="u1930_div" class=""></div>
+        <div id="u1930_text" class="text ">
+          <p><span>拉单接口优化</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1931" class="ax_default label">
+        <div id="u1931_div" class=""></div>
+        <div id="u1931_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">问题描述：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">聚合电子对接拉单接口因其内部对于接口有显影限制，导致其每分钟会调取拉单接口获得3分钟</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">之内的数据，而因为Hilo游戏的特殊机制，3分钟内无法完成创建注单与结算的完整流程，从而聚合电子方</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">无法通过创建注单时间获得结算注单信息数据。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1932" class="ax_default label">
+        <div id="u1932_div" class=""></div>
+        <div id="u1932_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">解决方案：</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">将原始拉单接口分为两个：</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">1.注单拉单接口：以注单创建时间作为其查询条件获得对应时间内的注单数据；</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">2.注单结算接口：以注单结算时间作为其查询条件获得对应时间内的注单数据；</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">3.两个拉单接口均需沿用V2版本原始拉单接口的30秒时间限制</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">※ 针对原有用户该接口也将开放，针对后续新入住商户可根据自身需求选择对接的拉单接口类型</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1933" class="ax_default label">
+        <div id="u1933_div" class=""></div>
+        <div id="u1933_text" class="text ">
+          <p><span>问题描述：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1934" class="ax_default _图片_">
+        <img id="u1934_img" class="img " src="images/api优化_1/u1934.png"/>
+        <div id="u1934_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1935" class="ax_default label">
+        <div id="u1935_div" class=""></div>
+        <div id="u1935_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">解决方案：</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">就目前提出的两个异常情况更新错误代码，添加“重复派彩”以及“找不到transferNo”的错误代码，并同步更新至API文档中</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1936" class="ax_default label">
+        <div id="u1936_div" class=""></div>
+        <div id="u1936_text" class="text ">
+          <p><span>※ 以上优化内容仅针对V2版本接口进行修改，不对V1版本接口修改</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1937" class="ax_default label">
+        <div id="u1937_div" class=""></div>
+        <div id="u1937_text" class="text ">
+          <p><span>91112：重复派彩&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 91113：找不到transferNo</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>

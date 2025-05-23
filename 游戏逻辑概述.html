@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>游戏逻辑概述</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/游戏逻辑概述/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.7.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/游戏逻辑概述/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12503" class="ax_default _一级标题">
+        <div id="u12503_div" class=""></div>
+        <div id="u12503_text" class="text ">
+          <p><span>Plinko弹珠逻辑概述</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12504" class="ax_default _二级标题">
+        <div id="u12504_div" class=""></div>
+        <div id="u12504_text" class="text ">
+          <p><span>游戏形式描述</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12505" class="ax_default _文本段落">
+        <div id="u12505_div" class=""></div>
+        <div id="u12505_text" class="text ">
+          <p style="font-size:14px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">1.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;font-style:normal;">进入游戏</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">-生成本局基础数值（服务端种子，默认客户端种子，随机光标）；根据基础数值计算数值（弹珠路径代码（R/L串码），开奖结果哈希）</span></p><p style="font-size:14px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">2.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;font-style:normal;">设置游戏</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">-用户设置游戏参数（投注金额，矩阵排数，风险等级，自动投注次数）；客户端种子（服务端种子，随机光标跟随更新）</span></p><p style="font-size:14px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">3.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;font-style:normal;">投注</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">-点击投注根据设置的游戏参数进行计算；页面生成弹珠开始按照路径下落</span></p><p style="font-size:12px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;font-size:14px;">4.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;font-style:normal;font-size:14px;">注单判断</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;font-size:14px;">-（</span><span style="font-family:'微软雅黑 Oblique', '微软雅黑', '微软雅黑', sans-serif;font-weight:400;font-style:oblique;">※ 小球落入洞内</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;font-size:14px;">）注单有效，显示中奖赔率，生成并显示本局注单，刷新显示玩家账户余额</span></p><p style="font-size:14px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 注单无效，提示注单无效，不生成本局注单，返还投注金额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u12506" class="ax_default _图片_">
+        <img id="u12506_img" class="img " src="images/游戏逻辑概述/u12506.png"/>
+        <div id="u12506_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12507" class="ax_default _二级标题">
+        <div id="u12507_div" class=""></div>
+        <div id="u12507_text" class="text ">
+          <p style="font-size:24px;"><span>游戏结果&amp;开奖结果哈希产生</span></p><ul><li style="font-size:18px;"><span>游戏结果代码</span></li></ul>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u12508" class="ax_default _图片_">
+        <img id="u12508_img" class="img " src="images/游戏逻辑概述/u12508.png"/>
+        <div id="u12508_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12509" class="ax_default _文本段落">
+        <div id="u12509_div" class=""></div>
+        <div id="u12509_text" class="text ">
+          <p style="font-size:12px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-size:14px;">1.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;font-size:14px;">基础数据</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-size:14px;">-包含服务端种子，客户端种子和随机光标（</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">16位，字母+数字随机数</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-size:14px;">）</span></p><p style="font-size:12px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-size:14px;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 用户更改客户端种子(</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">不超12位，字母+数字</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-size:14px;">)→服务端种子&amp;随机光标同步更新</span></p><p style="font-size:14px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">2.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">SHA256散列</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">-将基础数据组合后进行SHA256散列机密生成十六进制串码</span></p><p style="font-size:14px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#0000FF;">服务端种子</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#95F204;">客户端种子</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#F59A23;">随机光标</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">→SHA256→</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#8400FF;">十六进制串码</span></p><p style="font-size:14px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">3.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">截取转换</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">-十六进制串码每四位一组进行截取形成16组4位的十六进制代码，并将此代码进行十进制转换得到16组十进制数字</span></p><p style="font-size:14px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">4.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">比较</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">-十进制数字与32768进行比较，大于等于设定方向为左，记录代码为“L”</span></p><p style="font-size:14px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 小于设定方向为右，记录代码为“R”</span></p><p style="font-size:14px;"><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">5.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">弹珠下落路径代码</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">-16个比对结果后记录的代码形成以“L/R”组成的串码作为弹珠下落路径</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12510" class="ax_default _二级标题">
+        <div id="u12510_div" class=""></div>
+        <div id="u12510_text" class="text ">
+          <ul><li style=""><span>返奖奖金计算</span></li></ul>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u12511" class="ax_default _图片_">
+        <img id="u12511_img" class="img " src="images/游戏逻辑概述/u12511.png"/>
+        <div id="u12511_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12512" class="ax_default _文本段落">
+        <div id="u12512_div" class=""></div>
+        <div id="u12512_text" class="text ">
+          <p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">1.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">最终落点</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">-根据玩家选择的排数根据弹珠下落路径进行截取，获取对应排数的下落路径确定最终弹珠落入洞为最终落点</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">2.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">中奖赔率</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">-根据玩家选择的风险等级结合后台设置对应排数和对应风险等级的赔率组合，通过最终落点确定获奖赔率</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">3.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">返奖金额</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">-根据玩家设置的投注金额×中奖赔率计算本局玩家的返奖金额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12513" class="ax_default _二级标题">
+        <div id="u12513_div" class=""></div>
+        <div id="u12513_text" class="text ">
+          <ul><li style=""><span>开奖结果哈希</span></li></ul>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u12514" class="ax_default _图片_">
+        <img id="u12514_img" class="img " src="images/游戏逻辑概述/u12514.png"/>
+        <div id="u12514_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12515" class="ax_default _文本段落">
+        <div id="u12515_div" class=""></div>
+        <div id="u12515_text" class="text ">
+          <p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">1.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;font-style:normal;">基础数据</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">-包含弹珠下落路径代码、公链区块哈希、服务端种子和随机光标</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 服务端验证种子随客户端种子改变而改变</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 随机光标随客户端种子改变而改变</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 弹珠下落路径代码随服务端种子&amp;客户端种子&amp;随机光标改变而改变</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span style="font-family:'微软雅黑 Oblique', '微软雅黑', '微软雅黑', sans-serif;font-weight:400;font-style:oblique;color:#D9001B;">※ 需开发确认公链区块哈希是否需要随之做更新，产品侧需求不强制要求区块哈希跟随改变</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">2.</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;font-style:normal;">SHA256散列获得开奖结果哈希</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">-将基础数据组合后进行SHA256散列机密生成十六进制串码</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;color:#8400FF;">弹珠下落路径代码</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;color:#70B603;">公链区块哈希</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;color:#0000FF;">服务端验证种子</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;color:#F59A23;">随机光标</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-style:normal;color:#000000;">→SHA256→</span><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;font-style:normal;color:#02A7F0;">开奖结果哈希</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>

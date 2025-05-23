@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>技术问题修复</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/技术问题修复/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.7.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/技术问题修复/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1061" class="ax_default _一级标题">
+        <div id="u1061_div" class=""></div>
+        <div id="u1061_text" class="text ">
+          <p><span>修复需求-1 批量派彩API接口的币种字段修复</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1062" class="ax_default _文本段落">
+        <div id="u1062_div" class=""></div>
+        <div id="u1062_text" class="text ">
+          <p><span>针对2024/03修复需求中涉及的API接口中币种字段修复的遗漏问题</span></p><p><span>将批量派彩API接口中币种字段的内容“CNY”改为“--”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1063" class="ax_default _一级标题">
+        <div id="u1063_div" class=""></div>
+        <div id="u1063_text" class="text ">
+          <p><span>修复需求-2 跨月数据修复</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1064" class="ax_default _文本段落">
+        <div id="u1064_div" class=""></div>
+        <div id="u1064_text" class="text ">
+          <p><span>在3月和4月交接时出现的新问题，由于跨月导致部分订单未正常结算，目前已完成对订单数据进行修复，为避免后续跨月产生同样问题</span></p><p><span>需将对应代码进行优化修复解决此问题</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1065" class="ax_default _一级标题">
+        <div id="u1065_div" class=""></div>
+        <div id="u1065_text" class="text ">
+          <p><span>修复需求-3 Tron链节点修复</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1066" class="ax_default _文本段落">
+        <div id="u1066_div" class=""></div>
+        <div id="u1066_text" class="text ">
+          <p><span>由于Tron公链获取最新区块哈希服务存在获取不到最新数据的情况从而导致无法正常推进业务，为避免该情况在不可控范围内。</span></p><p><span>目前将所有针对公链哈希的内容全部更换为程序自动生成哈希字符串来代替所有业务</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1067" class="ax_default _文本段落">
+        <div id="u1067_div" class=""></div>
+        <div id="u1067_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">模拟公链哈希生成规则：</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">※ 为模拟Tron公链哈希格式，请遵循以下规则输出公链哈希</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">1. 模拟公链哈希字符串需以64为数据+小写字母的格式生成</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">2. 字符串首9位均以“0”进行显示：“000000000”</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">3. 第十位至第六十四位由当前时间点+40位随机数进行SHA256加密获得串码，例：2024年4月18日10:15:56转为20240418101556+40位随机数“pobwmqubieyg7raa423g0fa5mvgvhkf8zxtdpym8”</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">进行SHA256加密获得a4ceed200c130e08dfac4228fba0a50da97310743965c74bf8f1ba698d72e64c</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">并补至既定9位后获得“000000000a4ceed200c130e08dfac4228fba0a50da97310743965c74bf8f1ba698d72e64c”并截取前64位</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">最终获得“000000000a4ceed200c130e08dfac4228fba0a50da97310743965c74bf8f1ba6”作为模拟公链哈希</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1068" class="ax_default _文本段落">
+        <div id="u1068_div" class=""></div>
+        <div id="u1068_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;color:#000000;">模拟公链哈希修改内容：</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">1. “极限逃生”与“T台美女秀”游戏的爆点计算逻辑中</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">2.&nbsp; 替换其余几款游戏针对公平性验证内容中公链哈希的内容</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#F2F2F2;">3.&nbsp; 后台针对公链哈希记录的模块中</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1069" class="ax_default _图片_">
+        <img id="u1069_img" class="img " src="images/技术问题修复/u1069.png"/>
+        <div id="u1069_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1070" class="ax_default _图片_">
+        <img id="u1070_img" class="img " src="images/技术问题修复/u1070.png"/>
+        <div id="u1070_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1071" class="ax_default _一级标题">
+        <div id="u1071_div" class=""></div>
+        <div id="u1071_text" class="text ">
+          <p><span>修复需求-4 域名管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1072" class="ax_default _文本段落">
+        <div id="u1072_div" class=""></div>
+        <div id="u1072_text" class="text ">
+          <p><span>根据运维反馈gameIcon域名信息目前直接写死在api配置中，当域名被封禁或下线后则会影响商户通过api接口获取相应数据</span></p><p><span>应急处理方案：修改配置更新域名并重启API服务后即可恢复正常</span></p><p><span><br></span></p><p><span>针对DB哈希游戏域名管理后台中，通过域名管理方案添加对应服务域名以及备用域名配置，当某个域名发生异常后自动切换至新域名或备用域名保证提供稳定的api数据接口服务</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1073" class="ax_default _文本段落">
+        <div id="u1073_div" class=""></div>
+        <div id="u1073_text" class="text ">
+          <p><span>※ 需要取消公链哈希的跳转功能：Bingo游戏第三方验证模块中公链哈希内容；Hilo游戏公平性验证；Plinko游戏注单详情中区块哈希内容；幸运庄闲验证性页面公链哈希内容；哈希牛牛验证性页面公链哈希内容；哈希大小验证性页面公链哈希内容；哈希单双验证性页面公链哈希内容；幸运哈希验证性页面公链哈希内容；</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1074" class="ax_default _一级标题">
+        <div id="u1074_div" class=""></div>
+        <div id="u1074_text" class="text ">
+          <p><span>图片域名管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u1075" class="ax_default line">
+        <img id="u1075_img" class="img " src="images/技术问题修复/u1075.svg"/>
+        <div id="u1075_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1076" class="ax_default primary_button">
+        <div id="u1076_div" class=""></div>
+        <div id="u1076_text" class="text ">
+          <p><span>新增</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1077" class="ax_default primary_button">
+        <div id="u1077_div" class=""></div>
+        <div id="u1077_text" class="text ">
+          <p><span>ID</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1078" class="ax_default primary_button">
+        <div id="u1078_div" class=""></div>
+        <div id="u1078_text" class="text ">
+          <p><span>域名</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1079" class="ax_default primary_button">
+        <div id="u1079_div" class=""></div>
+        <div id="u1079_text" class="text ">
+          <p><span>备注</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1080" class="ax_default primary_button">
+        <div id="u1080_div" class=""></div>
+        <div id="u1080_text" class="text ">
+          <p><span>状态</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1081" class="ax_default primary_button">
+        <div id="u1081_div" class=""></div>
+        <div id="u1081_text" class="text ">
+          <p><span>操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1082" class="ax_default primary_button">
+        <div id="u1082_div" class=""></div>
+        <div id="u1082_text" class="text ">
+          <p><span>暂无数据</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1083" class="ax_default primary_button">
+        <div id="u1083_div" class=""></div>
+        <div id="u1083_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u1084" class="ax_default icon">
+        <img id="u1084_img" class="img " src="images/技术问题修复/u1084.svg"/>
+        <div id="u1084_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1085" class="ax_default label">
+        <div id="u1085_div" class=""></div>
+        <div id="u1085_text" class="text ">
+          <p><span>图片域名：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1086" class="ax_default _一级标题">
+        <div id="u1086_div" class=""></div>
+        <div id="u1086_text" class="text ">
+          <p><span>新增图片域名</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u1087" class="ax_default text_field">
+        <div id="u1087_div" class=""></div>
+        <input id="u1087_input" type="text" value="" class="u1087_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1088" class="ax_default label">
+        <div id="u1088_div" class=""></div>
+        <div id="u1088_text" class="text ">
+          <p><span>备注：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本域) -->
+      <div id="u1089" class="ax_default text_area">
+        <div id="u1089_div" class=""></div>
+        <textarea id="u1089_input" class="u1089_input"></textarea>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1090" class="ax_default primary_button">
+        <div id="u1090_div" class=""></div>
+        <div id="u1090_text" class="text ">
+          <p><span>取消</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1091" class="ax_default primary_button">
+        <div id="u1091_div" class=""></div>
+        <div id="u1091_text" class="text ">
+          <p><span>确定</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1092" class="ax_default _文本段落">
+        <div id="u1092_div" class=""></div>
+        <div id="u1092_text" class="text ">
+          <p><span>在域名管理后台中的“图片域名管理”模块中添加对应图片或者图标的域名，当域名失效时可通过切换此处域名的状态来更改游戏前端获取对应图片或者图标的地址信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1093" class="ax_default _一级标题">
+        <div id="u1093_div" class=""></div>
+        <div id="u1093_text" class="text ">
+          <p><span>修复需求-5 代码优化</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1094" class="ax_default _文本段落">
+        <div id="u1094_div" class=""></div>
+        <div id="u1094_text" class="text ">
+          <p><span>针对拉单API接口出现的错误订单数据，研发进行对应的代码优化</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1095" class="ax_default _文本段落">
+        <div id="u1095_div" class=""></div>
+        <div id="u1095_text" class="text ">
+          <p><span>3. 前端需求需去掉公链哈希跳转功能，不在提供直接跳转至TronScan浏览器页面中</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>API优化</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/api优化/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.7.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/api优化/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1876" class="ax_default _一级标题">
+        <div id="u1876_div" class=""></div>
+        <div id="u1876_text" class="text ">
+          <p><span>部分商户对接新游戏问题</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1877" class="ax_default label">
+        <div id="u1877_div" class=""></div>
+        <div id="u1877_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">问题描述：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">部分C端没有设置新游戏入口，部分商户没有办法进入游戏</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1878" class="ax_default label">
+        <div id="u1878_div" class=""></div>
+        <div id="u1878_text" class="text ">
+          <p><span>更新C端游戏入口设置，方便商户进入游戏</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1879" class="ax_default label">
+        <div id="u1879_div" class=""></div>
+        <div id="u1879_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">问题描述：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">针对2.3.0中涉及的需求：“聚合电子对接拉单接口因其内部对于接口有显影限制，导致其每分钟会调取拉单接口获得3分钟</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">之内的数据，而因为Hilo游戏的特殊机制，3分钟内无法完成创建注单与结算的完整流程，从而聚合电子方</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">无法通过创建注单时间获得结算注单信息数据。”对应拉单历史下注统计的接口需同步</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1880" class="ax_default label">
+        <div id="u1880_div" class=""></div>
+        <div id="u1880_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">解决方案：</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">将拉单历史下注统计接口分为两个：</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">1.注单历史拉单接口：以注单创建时间作为其查询条件获得对应时间内的注单数据；</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">2.注单历史结算接口：以注单结算时间作为其查询条件获得对应时间内的注单数据；</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">3.两个接口均需沿用V2版本原始拉单接口的30秒时间限制</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">※ 针对原有用户该接口也将开放，针对后续新入住商户可根据自身需求选择对接的拉单接口类型</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>

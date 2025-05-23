@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>API接口需求</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/api接口需求/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.7.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/api接口需求/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u444" class="ax_default _一级标题">
+        <div id="u444_div" class=""></div>
+        <div id="u444_text" class="text ">
+          <p><span>API接口需求</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u445" class="ax_default label">
+        <div id="u445_div" class=""></div>
+        <div id="u445_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">问题描述：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">针对集团需要获取哈希平台相应运营数据</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u446" class="ax_default label">
+        <div id="u446_div" class=""></div>
+        <div id="u446_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">解决方案：</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">结合已成熟得“真人平台”API模式针对哈希平台对应数据进行开发数据接口：</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">1.拉单接口：参考线上API文档：/data/merchant/betHistoryRecord/v1；</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">2.对账接口：有研发结合哈希的业务数据进行开发，参考线上API文档：/data/merchant/reportAgentDay/v1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u447" class="ax_default label">
+        <div id="u447_div" class=""></div>
+        <div id="u447_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">接口问题补充内容：</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">1. 金额小数保留位数与目前普通商户拉单和对账接口数据格式保持一致；</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">2.接口拉去时间范围根据集团传过来的时间参数查询，如果超出平台查询范围，仅针对已有数据查询；（但目前版本先遵从31天的限制）</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">&nbsp;&nbsp; 未产生注单数据的不返回json，针对下注取消下注的按有数据标准考虑，需要将取消单一并传过去</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">3.非特定商户调取接口与目前非商户调取接口提示一致：验签错误；</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">4.在代码最外层添加总计数据（总有效投注，总投注，总盈利等），如下图：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u448" class="ax_default _图片_">
+        <img id="u448_img" class="img " src="images/api接口需求/u448.png"/>
+        <div id="u448_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>

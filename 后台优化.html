@@ -1,0 +1,3594 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>后台优化</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/后台优化/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.7.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/后台优化/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u449" class="ax_default _一级标题">
+        <div id="u449_div" class=""></div>
+        <div id="u449_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u450" class="ax_default _一级标题">
+        <div id="u450_div" class=""></div>
+        <div id="u450_text" class="text ">
+          <p><span>商户管理模块</span></p><p><span>商户信息添加“币种”标识</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u451" class="ax_default label">
+        <div id="u451_div" class=""></div>
+        <div id="u451_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">需求背景：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">满足集团报表API接口中币种数据的要求</span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">解决方案：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">在商户信息中添加“币种”标识信息，仅作为标识，不作为商户可多币种接入的逻辑</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u452" class="ax_default box_2">
+        <div id="u452_div" class=""></div>
+        <div id="u452_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u453" class="ax_default _一级标题">
+        <div id="u453_div" class=""></div>
+        <div id="u453_text" class="text ">
+          <p><span>商户信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u454" class="ax_default primary_button">
+        <div id="u454_div" class=""></div>
+        <div id="u454_text" class="text ">
+          <p><span>新增线路商</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u455" class="ax_default primary_button">
+        <div id="u455_div" class=""></div>
+        <div id="u455_text" class="text ">
+          <p><span>新增普通商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u456" class="ax_default primary_button">
+        <div id="u456_div" class=""></div>
+        <div id="u456_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp;&nbsp; 搜索</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u457" class="ax_default primary_button">
+        <div id="u457_div" class=""></div>
+        <div id="u457_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp;&nbsp; 重置</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u458" class="ax_default icon">
+        <img id="u458_img" class="img " src="images/创建商户优化需求/u17.svg"/>
+        <div id="u458_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u459" class="ax_default icon">
+        <img id="u459_img" class="img " src="images/创建商户优化需求/u18.svg"/>
+        <div id="u459_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u460" class="ax_default primary_button">
+        <div id="u460_div" class=""></div>
+        <div id="u460_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u461" class="ax_default label">
+        <div id="u461_div" class=""></div>
+        <div id="u461_text" class="text ">
+          <p><span>商户名称/编码：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (下拉框) -->
+      <div id="u462" class="ax_default droplist">
+        <div id="u462_div" class=""></div>
+        <select id="u462_input" class="u462_input">
+          <option class="u462_input_option" selected value="平台AAAAA">平台AAAAA</option>
+          <option class="u462_input_option" value="├─运营线路商 GGLED">├─运营线路商 GGLED</option>
+          <option class="u462_input_option" value="├─对接线路商 D9QTR">├─对接线路商 D9QTR</option>
+          <option class="u462_input_option" value="     └─OB旗舰线路商 2PPDN">&nbsp;&nbsp; &nbsp; └─OB旗舰线路商 2PPDN</option>
+          <option class="u462_input_option" value="          └─  OB旗舰商户 D4RPS">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; └─&nbsp; OB旗舰商户 D4RPS</option>
+          <option class="u462_input_option" value="├─内部测试线路商 6W22B">├─内部测试线路商 6W22B</option>
+          <option class="u462_input_option" value="├─F8W35 F8W35">├─F8W35 F8W35</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u463" class="ax_default label">
+        <div id="u463_div" class=""></div>
+        <div id="u463_text" class="text ">
+          <p><span>商户类型：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (下拉框) -->
+      <div id="u464" class="ax_default droplist">
+        <div id="u464_div" class=""></div>
+        <select id="u464_input" class="u464_input">
+          <option class="u464_input_option" selected value="全部">全部</option>
+          <option class="u464_input_option" value="线路商">线路商</option>
+          <option class="u464_input_option" value="普通商户">普通商户</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u465" class="ax_default label">
+        <div id="u465_div" class=""></div>
+        <div id="u465_text" class="text ">
+          <p><span>商户状态：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (下拉框) -->
+      <div id="u466" class="ax_default droplist">
+        <div id="u466_div" class=""></div>
+        <select id="u466_input" class="u466_input">
+          <option class="u466_input_option" selected value="全部">全部</option>
+          <option class="u466_input_option" value="启用">启用</option>
+          <option class="u466_input_option" value="停用">停用</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u467" class="ax_default label">
+        <div id="u467_div" class=""></div>
+        <div id="u467_text" class="text ">
+          <p><span>创建时间：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u468" class="ax_default text_field">
+        <div id="u468_div" class=""></div>
+        <input id="u468_input" type="text" value="" class="u468_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u469" class="ax_default text_field">
+        <div id="u469_div" class=""></div>
+        <input id="u469_input" type="text" value="" class="u469_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u470" class="ax_default label">
+        <div id="u470_div" class=""></div>
+        <div id="u470_text" class="text ">
+          <p><span>至</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u471" class="ax_default icon">
+        <img id="u471_img" class="img " src="images/创建商户优化需求/u30.svg"/>
+        <div id="u471_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u472" class="ax_default primary_button">
+        <div id="u472_div" class=""></div>
+        <div id="u472_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u473" class="ax_default box_2">
+        <div id="u473_div" class=""></div>
+        <div id="u473_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u474" class="ax_default label">
+        <div id="u474_div" class=""></div>
+        <div id="u474_text" class="text ">
+          <p><span>序号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u475" class="ax_default label">
+        <div id="u475_div" class=""></div>
+        <div id="u475_text" class="text ">
+          <p><span>商户名称</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u476" class="ax_default label">
+        <div id="u476_div" class=""></div>
+        <div id="u476_text" class="text ">
+          <p><span>商户编码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u477" class="ax_default label">
+        <div id="u477_div" class=""></div>
+        <div id="u477_text" class="text ">
+          <p><span>商户类别</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u478" class="ax_default label">
+        <div id="u478_div" class=""></div>
+        <div id="u478_text" class="text ">
+          <p><span>管理员账号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u479" class="ax_default label">
+        <div id="u479_div" class=""></div>
+        <div id="u479_text" class="text ">
+          <p><span>创建时间</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u480" class="ax_default label">
+        <div id="u480_div" class=""></div>
+        <div id="u480_text" class="text ">
+          <p><span>商户状态</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u481" class="ax_default label">
+        <div id="u481_div" class=""></div>
+        <div id="u481_text" class="text ">
+          <p><span>操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u482" class="ax_default box_1">
+        <div id="u482_div" class=""></div>
+        <div id="u482_text" class="text ">
+          <p><span>1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u483" class="ax_default box_1">
+        <div id="u483_div" class=""></div>
+        <div id="u483_text" class="text ">
+          <p><span>平台</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u484" class="ax_default icon">
+        <img id="u484_img" class="img " src="images/创建商户优化需求/u43.svg"/>
+        <div id="u484_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u485" class="ax_default box_1">
+        <div id="u485_div" class=""></div>
+        <div id="u485_text" class="text ">
+          <p><span>AAAAAA</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u486" class="ax_default box_1">
+        <div id="u486_div" class=""></div>
+        <div id="u486_text" class="text ">
+          <p><span>线路商</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u487" class="ax_default box_1">
+        <div id="u487_div" class=""></div>
+        <div id="u487_text" class="text ">
+          <p><span>admin</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u488" class="ax_default box_1">
+        <div id="u488_div" class=""></div>
+        <div id="u488_text" class="text ">
+          <p><span>2022-08-15 18:10:11</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u489" class="ax_default box_1">
+        <div id="u489_div" class=""></div>
+        <div id="u489_text" class="text ">
+          <p><span>启用</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u490" class="ax_default box_1">
+        <div id="u490_div" class=""></div>
+        <div id="u490_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u491" class="ax_default label">
+        <div id="u491_div" class=""></div>
+        <div id="u491_text" class="text ">
+          <p><span>共&nbsp; 1&nbsp; 条</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (下拉框) -->
+      <div id="u492" class="ax_default droplist">
+        <div id="u492_div" class=""></div>
+        <select id="u492_input" class="u492_input">
+          <option class="u492_input_option" selected value="10 条/页">10 条/页</option>
+          <option class="u492_input_option" value="20 条/页">20 条/页</option>
+          <option class="u492_input_option" value="50 条/页">50 条/页</option>
+          <option class="u492_input_option" value="100 条/页">100 条/页</option>
+          <option class="u492_input_option" value="500 条/页">500 条/页</option>
+          <option class="u492_input_option" value="1000 条/页">1000 条/页</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u493" class="ax_default" data-left="865" data-top="385" data-width="38" data-height="19" layer-opacity="1">
+
+        <!-- Unnamed (形状) -->
+        <div id="u494" class="ax_default icon">
+          <img id="u494_img" class="img " src="images/创建商户优化需求/u53.svg"/>
+          <div id="u494_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u495" class="ax_default icon">
+          <img id="u495_img" class="img " src="images/创建商户优化需求/u54.svg"/>
+          <div id="u495_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u496" class="ax_default label">
+          <div id="u496_div" class=""></div>
+          <div id="u496_text" class="text ">
+            <p><span>1</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u497" class="ax_default" data-left="923" data-top="382" data-width="83" data-height="25" layer-opacity="1">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u498" class="ax_default label">
+          <div id="u498_div" class=""></div>
+          <div id="u498_text" class="text ">
+            <p><span>前往</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本框) -->
+        <div id="u499" class="ax_default text_field">
+          <div id="u499_div" class=""></div>
+          <input id="u499_input" type="text" value="1" class="u499_input"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u500" class="ax_default label">
+          <div id="u500_div" class=""></div>
+          <div id="u500_text" class="text ">
+            <p><span>页</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u501" class="ax_default label">
+        <div id="u501_div" class=""></div>
+        <div id="u501_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">层级：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">平台</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u502" class="ax_default primary_button">
+        <div id="u502_div" class=""></div>
+        <div id="u502_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u503" class="ax_default box_2">
+        <div id="u503_div" class=""></div>
+        <div id="u503_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u504" class="ax_default label">
+        <div id="u504_div" class=""></div>
+        <div id="u504_text" class="text ">
+          <p><span>序号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u505" class="ax_default label">
+        <div id="u505_div" class=""></div>
+        <div id="u505_text" class="text ">
+          <p><span>商户名称</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u506" class="ax_default label">
+        <div id="u506_div" class=""></div>
+        <div id="u506_text" class="text ">
+          <p><span>商户编码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u507" class="ax_default label">
+        <div id="u507_div" class=""></div>
+        <div id="u507_text" class="text ">
+          <p><span>商户类别</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u508" class="ax_default label">
+        <div id="u508_div" class=""></div>
+        <div id="u508_text" class="text ">
+          <p><span>管理员账号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u509" class="ax_default label">
+        <div id="u509_div" class=""></div>
+        <div id="u509_text" class="text ">
+          <p><span>创建时间</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u510" class="ax_default label">
+        <div id="u510_div" class=""></div>
+        <div id="u510_text" class="text ">
+          <p><span>商户状态</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u511" class="ax_default label">
+        <div id="u511_div" class=""></div>
+        <div id="u511_text" class="text ">
+          <p><span>操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u512" class="ax_default box_1">
+        <div id="u512_div" class=""></div>
+        <div id="u512_text" class="text ">
+          <p><span>1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u513" class="ax_default box_1">
+        <div id="u513_div" class=""></div>
+        <div id="u513_text" class="text ">
+          <p><span>vvmp01</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u514" class="ax_default box_1">
+        <div id="u514_div" class=""></div>
+        <div id="u514_text" class="text ">
+          <p><span>CQFDH</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u515" class="ax_default box_1">
+        <div id="u515_div" class=""></div>
+        <div id="u515_text" class="text ">
+          <p><span>普通商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u516" class="ax_default box_1">
+        <div id="u516_div" class=""></div>
+        <div id="u516_text" class="text ">
+          <p><span>elva77</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u517" class="ax_default box_1">
+        <div id="u517_div" class=""></div>
+        <div id="u517_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u518" class="ax_default box_1">
+        <div id="u518_div" class=""></div>
+        <div id="u518_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 启用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u519" class="ax_default box_1">
+        <div id="u519_div" class=""></div>
+        <div id="u519_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u520" class="ax_default icon">
+        <img id="u520_img" class="img " src="images/创建商户优化需求/u79.svg"/>
+        <div id="u520_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u521" class="ax_default box_1">
+        <div id="u521_div" class=""></div>
+        <div id="u521_text" class="text ">
+          <p><span>--</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u522" class="ax_default label">
+        <div id="u522_div" class=""></div>
+        <div id="u522_text" class="text ">
+          <p><span>订单验证</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u523" class="ax_default box_1">
+        <div id="u523_div" class=""></div>
+        <div id="u523_text" class="text ">
+          <p><span>2</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u524" class="ax_default box_1">
+        <div id="u524_div" class=""></div>
+        <div id="u524_text" class="text ">
+          <p><span>一波一波</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u525" class="ax_default box_1">
+        <div id="u525_div" class=""></div>
+        <div id="u525_text" class="text ">
+          <p><span>974CL</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u526" class="ax_default box_1">
+        <div id="u526_div" class=""></div>
+        <div id="u526_text" class="text ">
+          <p><span>普通商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u527" class="ax_default box_1">
+        <div id="u527_div" class=""></div>
+        <div id="u527_text" class="text ">
+          <p><span>yiboybola</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u528" class="ax_default box_1">
+        <div id="u528_div" class=""></div>
+        <div id="u528_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u529" class="ax_default box_1">
+        <div id="u529_div" class=""></div>
+        <div id="u529_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 启用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u530" class="ax_default box_1">
+        <div id="u530_div" class=""></div>
+        <div id="u530_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u531" class="ax_default icon">
+        <img id="u531_img" class="img " src="images/创建商户优化需求/u79.svg"/>
+        <div id="u531_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u532" class="ax_default box_1">
+        <div id="u532_div" class=""></div>
+        <div id="u532_text" class="text ">
+          <p><span>3</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u533" class="ax_default box_1">
+        <div id="u533_div" class=""></div>
+        <div id="u533_text" class="text ">
+          <p><span>elmo0721</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u534" class="ax_default box_1">
+        <div id="u534_div" class=""></div>
+        <div id="u534_text" class="text ">
+          <p><span>KQTDK</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u535" class="ax_default box_1">
+        <div id="u535_div" class=""></div>
+        <div id="u535_text" class="text ">
+          <p><span>普通商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u536" class="ax_default box_1">
+        <div id="u536_div" class=""></div>
+        <div id="u536_text" class="text ">
+          <p><span>elmo0721</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u537" class="ax_default box_1">
+        <div id="u537_div" class=""></div>
+        <div id="u537_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u538" class="ax_default box_1">
+        <div id="u538_div" class=""></div>
+        <div id="u538_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 启用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u539" class="ax_default box_1">
+        <div id="u539_div" class=""></div>
+        <div id="u539_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u540" class="ax_default icon">
+        <img id="u540_img" class="img " src="images/创建商户优化需求/u79.svg"/>
+        <div id="u540_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u541" class="ax_default box_1">
+        <div id="u541_div" class=""></div>
+        <div id="u541_text" class="text ">
+          <p><span>4</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u542" class="ax_default box_1">
+        <div id="u542_div" class=""></div>
+        <div id="u542_text" class="text ">
+          <p><span>掌心脆</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u543" class="ax_default box_1">
+        <div id="u543_div" class=""></div>
+        <div id="u543_text" class="text ">
+          <p><span>QMHTN</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u544" class="ax_default box_1">
+        <div id="u544_div" class=""></div>
+        <div id="u544_text" class="text ">
+          <p><span>线路商</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u545" class="ax_default box_1">
+        <div id="u545_div" class=""></div>
+        <div id="u545_text" class="text ">
+          <p><span>lanvin999</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u546" class="ax_default box_1">
+        <div id="u546_div" class=""></div>
+        <div id="u546_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u547" class="ax_default box_1">
+        <div id="u547_div" class=""></div>
+        <div id="u547_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 停用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u548" class="ax_default box_1">
+        <div id="u548_div" class=""></div>
+        <div id="u548_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u549" class="ax_default box_1">
+        <div id="u549_div" class=""></div>
+        <div id="u549_text" class="text ">
+          <p><span>5</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u550" class="ax_default box_1">
+        <div id="u550_div" class=""></div>
+        <div id="u550_text" class="text ">
+          <p><span>水果局</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u551" class="ax_default box_1">
+        <div id="u551_div" class=""></div>
+        <div id="u551_text" class="text ">
+          <p><span>4B8MY</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u552" class="ax_default box_1">
+        <div id="u552_div" class=""></div>
+        <div id="u552_text" class="text ">
+          <p><span>线路商</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u553" class="ax_default box_1">
+        <div id="u553_div" class=""></div>
+        <div id="u553_text" class="text ">
+          <p><span>fruit123</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u554" class="ax_default box_1">
+        <div id="u554_div" class=""></div>
+        <div id="u554_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u555" class="ax_default box_1">
+        <div id="u555_div" class=""></div>
+        <div id="u555_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 启用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u556" class="ax_default box_1">
+        <div id="u556_div" class=""></div>
+        <div id="u556_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u557" class="ax_default icon">
+        <img id="u557_img" class="img " src="images/创建商户优化需求/u79.svg"/>
+        <div id="u557_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u558" class="ax_default box_1">
+        <div id="u558_div" class=""></div>
+        <div id="u558_text" class="text ">
+          <p><span>6</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u559" class="ax_default box_1">
+        <div id="u559_div" class=""></div>
+        <div id="u559_text" class="text ">
+          <p><span>elmo3242343</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u560" class="ax_default box_1">
+        <div id="u560_div" class=""></div>
+        <div id="u560_text" class="text ">
+          <p><span>REBBD</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u561" class="ax_default box_1">
+        <div id="u561_div" class=""></div>
+        <div id="u561_text" class="text ">
+          <p><span>普通商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u562" class="ax_default box_1">
+        <div id="u562_div" class=""></div>
+        <div id="u562_text" class="text ">
+          <p><span>elmo3242343</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u563" class="ax_default box_1">
+        <div id="u563_div" class=""></div>
+        <div id="u563_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u564" class="ax_default box_1">
+        <div id="u564_div" class=""></div>
+        <div id="u564_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 启用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u565" class="ax_default box_1">
+        <div id="u565_div" class=""></div>
+        <div id="u565_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u566" class="ax_default icon">
+        <img id="u566_img" class="img " src="images/创建商户优化需求/u79.svg"/>
+        <div id="u566_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u567" class="ax_default box_1">
+        <div id="u567_div" class=""></div>
+        <div id="u567_text" class="text ">
+          <p><span>7</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u568" class="ax_default box_1">
+        <div id="u568_div" class=""></div>
+        <div id="u568_text" class="text ">
+          <p><span>elmo0714</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u569" class="ax_default box_1">
+        <div id="u569_div" class=""></div>
+        <div id="u569_text" class="text ">
+          <p><span>CG5FW</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u570" class="ax_default box_1">
+        <div id="u570_div" class=""></div>
+        <div id="u570_text" class="text ">
+          <p><span>普通商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u571" class="ax_default box_1">
+        <div id="u571_div" class=""></div>
+        <div id="u571_text" class="text ">
+          <p><span>elmo0714</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u572" class="ax_default box_1">
+        <div id="u572_div" class=""></div>
+        <div id="u572_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u573" class="ax_default box_1">
+        <div id="u573_div" class=""></div>
+        <div id="u573_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 停用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u574" class="ax_default box_1">
+        <div id="u574_div" class=""></div>
+        <div id="u574_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u575" class="ax_default box_1">
+        <div id="u575_div" class=""></div>
+        <div id="u575_text" class="text ">
+          <p><span>8</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u576" class="ax_default box_1">
+        <div id="u576_div" class=""></div>
+        <div id="u576_text" class="text ">
+          <p><span>botter20</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u577" class="ax_default box_1">
+        <div id="u577_div" class=""></div>
+        <div id="u577_text" class="text ">
+          <p><span>XPQFV</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u578" class="ax_default box_1">
+        <div id="u578_div" class=""></div>
+        <div id="u578_text" class="text ">
+          <p><span>普通商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u579" class="ax_default box_1">
+        <div id="u579_div" class=""></div>
+        <div id="u579_text" class="text ">
+          <p><span>botter20</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u580" class="ax_default box_1">
+        <div id="u580_div" class=""></div>
+        <div id="u580_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u581" class="ax_default box_1">
+        <div id="u581_div" class=""></div>
+        <div id="u581_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 启用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u582" class="ax_default box_1">
+        <div id="u582_div" class=""></div>
+        <div id="u582_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u583" class="ax_default icon">
+        <img id="u583_img" class="img " src="images/创建商户优化需求/u79.svg"/>
+        <div id="u583_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u584" class="ax_default box_1">
+        <div id="u584_div" class=""></div>
+        <div id="u584_text" class="text ">
+          <p><span>9</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u585" class="ax_default box_1">
+        <div id="u585_div" class=""></div>
+        <div id="u585_text" class="text ">
+          <p><span>botter19</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u586" class="ax_default box_1">
+        <div id="u586_div" class=""></div>
+        <div id="u586_text" class="text ">
+          <p><span>QXKUY</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u587" class="ax_default box_1">
+        <div id="u587_div" class=""></div>
+        <div id="u587_text" class="text ">
+          <p><span>普通商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u588" class="ax_default box_1">
+        <div id="u588_div" class=""></div>
+        <div id="u588_text" class="text ">
+          <p><span>botter19</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u589" class="ax_default box_1">
+        <div id="u589_div" class=""></div>
+        <div id="u589_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u590" class="ax_default box_1">
+        <div id="u590_div" class=""></div>
+        <div id="u590_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 启用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u591" class="ax_default box_1">
+        <div id="u591_div" class=""></div>
+        <div id="u591_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u592" class="ax_default icon">
+        <img id="u592_img" class="img " src="images/创建商户优化需求/u79.svg"/>
+        <div id="u592_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u593" class="ax_default box_1">
+        <div id="u593_div" class=""></div>
+        <div id="u593_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u594" class="ax_default box_1">
+        <div id="u594_div" class=""></div>
+        <div id="u594_text" class="text ">
+          <p><span>rommeltest123</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u595" class="ax_default box_1">
+        <div id="u595_div" class=""></div>
+        <div id="u595_text" class="text ">
+          <p><span>TAFUB</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u596" class="ax_default box_1">
+        <div id="u596_div" class=""></div>
+        <div id="u596_text" class="text ">
+          <p><span>普通商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u597" class="ax_default box_1">
+        <div id="u597_div" class=""></div>
+        <div id="u597_text" class="text ">
+          <p><span>rommel888</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u598" class="ax_default box_1">
+        <div id="u598_div" class=""></div>
+        <div id="u598_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u599" class="ax_default box_1">
+        <div id="u599_div" class=""></div>
+        <div id="u599_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 启用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u600" class="ax_default box_1">
+        <div id="u600_div" class=""></div>
+        <div id="u600_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u601" class="ax_default icon">
+        <img id="u601_img" class="img " src="images/创建商户优化需求/u79.svg"/>
+        <div id="u601_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u602" class="ax_default icon">
+        <img id="u602_img" class="img " src="images/创建商户优化需求/u161.svg"/>
+        <div id="u602_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u603" class="ax_default icon">
+        <img id="u603_img" class="img " src="images/创建商户优化需求/u162.svg"/>
+        <div id="u603_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u604" class="ax_default icon">
+        <img id="u604_img" class="img " src="images/创建商户优化需求/u163.svg"/>
+        <div id="u604_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u605" class="ax_default icon">
+        <img id="u605_img" class="img " src="images/创建商户优化需求/u163.svg"/>
+        <div id="u605_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u606" class="ax_default label">
+        <div id="u606_div" class=""></div>
+        <div id="u606_text" class="text ">
+          <p><span>共&nbsp; 111&nbsp; 条</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (下拉框) -->
+      <div id="u607" class="ax_default droplist">
+        <div id="u607_div" class=""></div>
+        <select id="u607_input" class="u607_input">
+          <option class="u607_input_option" selected value="10 条/页">10 条/页</option>
+          <option class="u607_input_option" value="20 条/页">20 条/页</option>
+          <option class="u607_input_option" value="50 条/页">50 条/页</option>
+          <option class="u607_input_option" value="100 条/页">100 条/页</option>
+          <option class="u607_input_option" value="500 条/页">500 条/页</option>
+          <option class="u607_input_option" value="1000 条/页">1000 条/页</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u608" class="ax_default" data-left="708" data-top="785" data-width="191" data-height="19" layer-opacity="1">
+
+        <!-- Unnamed (形状) -->
+        <div id="u609" class="ax_default icon">
+          <img id="u609_img" class="img " src="images/创建商户优化需求/u53.svg"/>
+          <div id="u609_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u610" class="ax_default icon">
+          <img id="u610_img" class="img " src="images/创建商户优化需求/u169.svg"/>
+          <div id="u610_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u611" class="ax_default label">
+          <div id="u611_div" class=""></div>
+          <div id="u611_text" class="text ">
+            <p><span style="color:#3F9EFF;">1&nbsp; </span><span>2&nbsp; 3&nbsp;&nbsp; 4&nbsp; 5&nbsp; 6&nbsp; …&nbsp; 12</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u612" class="ax_default" data-left="923" data-top="782" data-width="83" data-height="25" layer-opacity="1">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u613" class="ax_default label">
+          <div id="u613_div" class=""></div>
+          <div id="u613_text" class="text ">
+            <p><span>前往</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本框) -->
+        <div id="u614" class="ax_default text_field">
+          <div id="u614_div" class=""></div>
+          <input id="u614_input" type="text" value="1" class="u614_input"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u615" class="ax_default label">
+          <div id="u615_div" class=""></div>
+          <div id="u615_text" class="text ">
+            <p><span>页</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u616" class="ax_default label">
+        <div id="u616_div" class=""></div>
+        <div id="u616_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">层级：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">平台 </span><span style="font-family:&quot;Roboto&quot;, sans-serif;font-weight:400;">--&gt;&nbsp; </span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">水果局</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u617" class="ax_default primary_button">
+        <div id="u617_div" class=""></div>
+        <div id="u617_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u618" class="ax_default box_2">
+        <div id="u618_div" class=""></div>
+        <div id="u618_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u619" class="ax_default label">
+        <div id="u619_div" class=""></div>
+        <div id="u619_text" class="text ">
+          <p><span>序号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u620" class="ax_default label">
+        <div id="u620_div" class=""></div>
+        <div id="u620_text" class="text ">
+          <p><span>商户名称</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u621" class="ax_default label">
+        <div id="u621_div" class=""></div>
+        <div id="u621_text" class="text ">
+          <p><span>商户编码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u622" class="ax_default label">
+        <div id="u622_div" class=""></div>
+        <div id="u622_text" class="text ">
+          <p><span>商户类别</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u623" class="ax_default label">
+        <div id="u623_div" class=""></div>
+        <div id="u623_text" class="text ">
+          <p><span>管理员账号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u624" class="ax_default label">
+        <div id="u624_div" class=""></div>
+        <div id="u624_text" class="text ">
+          <p><span>创建时间</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u625" class="ax_default label">
+        <div id="u625_div" class=""></div>
+        <div id="u625_text" class="text ">
+          <p><span>商户状态</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u626" class="ax_default label">
+        <div id="u626_div" class=""></div>
+        <div id="u626_text" class="text ">
+          <p><span>操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u627" class="ax_default box_1">
+        <div id="u627_div" class=""></div>
+        <div id="u627_text" class="text ">
+          <p><span>1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u628" class="ax_default box_1">
+        <div id="u628_div" class=""></div>
+        <div id="u628_text" class="text ">
+          <p><span>芒果</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u629" class="ax_default box_1">
+        <div id="u629_div" class=""></div>
+        <div id="u629_text" class="text ">
+          <p><span>36S8P</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u630" class="ax_default box_1">
+        <div id="u630_div" class=""></div>
+        <div id="u630_text" class="text ">
+          <p><span>普通商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u631" class="ax_default box_1">
+        <div id="u631_div" class=""></div>
+        <div id="u631_text" class="text ">
+          <p><span>mango1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u632" class="ax_default box_1">
+        <div id="u632_div" class=""></div>
+        <div id="u632_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u633" class="ax_default box_1">
+        <div id="u633_div" class=""></div>
+        <div id="u633_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 启用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u634" class="ax_default box_1">
+        <div id="u634_div" class=""></div>
+        <div id="u634_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u635" class="ax_default icon">
+        <img id="u635_img" class="img " src="images/创建商户优化需求/u79.svg"/>
+        <div id="u635_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u636" class="ax_default box_1">
+        <div id="u636_div" class=""></div>
+        <div id="u636_text" class="text ">
+          <p><span>2</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u637" class="ax_default box_1">
+        <div id="u637_div" class=""></div>
+        <div id="u637_text" class="text ">
+          <p><span>菠萝</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u638" class="ax_default box_1">
+        <div id="u638_div" class=""></div>
+        <div id="u638_text" class="text ">
+          <p><span>47D9R</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u639" class="ax_default box_1">
+        <div id="u639_div" class=""></div>
+        <div id="u639_text" class="text ">
+          <p><span>普通商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u640" class="ax_default box_1">
+        <div id="u640_div" class=""></div>
+        <div id="u640_text" class="text ">
+          <p><span>pineapple1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u641" class="ax_default box_1">
+        <div id="u641_div" class=""></div>
+        <div id="u641_text" class="text ">
+          <p><span>2023-07-24 09:03:54</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u642" class="ax_default box_1">
+        <div id="u642_div" class=""></div>
+        <div id="u642_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 启用&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u643" class="ax_default box_1">
+        <div id="u643_div" class=""></div>
+        <div id="u643_text" class="text ">
+          <p><span>信息编辑&nbsp; 秘钥管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u644" class="ax_default icon">
+        <img id="u644_img" class="img " src="images/创建商户优化需求/u79.svg"/>
+        <div id="u644_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u645" class="ax_default label">
+        <div id="u645_div" class=""></div>
+        <div id="u645_text" class="text ">
+          <p><span>共&nbsp; 2&nbsp; 条</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (下拉框) -->
+      <div id="u646" class="ax_default droplist">
+        <div id="u646_div" class=""></div>
+        <select id="u646_input" class="u646_input">
+          <option class="u646_input_option" selected value="10 条/页">10 条/页</option>
+          <option class="u646_input_option" value="20 条/页">20 条/页</option>
+          <option class="u646_input_option" value="50 条/页">50 条/页</option>
+          <option class="u646_input_option" value="100 条/页">100 条/页</option>
+          <option class="u646_input_option" value="500 条/页">500 条/页</option>
+          <option class="u646_input_option" value="1000 条/页">1000 条/页</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u647" class="ax_default" data-left="865" data-top="969" data-width="38" data-height="19" layer-opacity="1">
+
+        <!-- Unnamed (形状) -->
+        <div id="u648" class="ax_default icon">
+          <img id="u648_img" class="img " src="images/创建商户优化需求/u53.svg"/>
+          <div id="u648_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u649" class="ax_default icon">
+          <img id="u649_img" class="img " src="images/创建商户优化需求/u54.svg"/>
+          <div id="u649_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u650" class="ax_default label">
+          <div id="u650_div" class=""></div>
+          <div id="u650_text" class="text ">
+            <p><span>1</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u651" class="ax_default" data-left="923" data-top="966" data-width="83" data-height="25" layer-opacity="1">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u652" class="ax_default label">
+          <div id="u652_div" class=""></div>
+          <div id="u652_text" class="text ">
+            <p><span>前往</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本框) -->
+        <div id="u653" class="ax_default text_field">
+          <div id="u653_div" class=""></div>
+          <input id="u653_input" type="text" value="1" class="u653_input"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u654" class="ax_default label">
+          <div id="u654_div" class=""></div>
+          <div id="u654_text" class="text ">
+            <p><span>页</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u655" class="ax_default box_1">
+        <div id="u655_div" class=""></div>
+        <div id="u655_text" class="text ">
+          <p><span>USDT</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u656" class="ax_default box_1">
+        <div id="u656_div" class=""></div>
+        <div id="u656_text" class="text ">
+          <p><span>CNY</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u657" class="ax_default box_1">
+        <div id="u657_div" class=""></div>
+        <div id="u657_text" class="text ">
+          <p><span>HKD</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u658" class="ax_default box_1">
+        <div id="u658_div" class=""></div>
+        <div id="u658_text" class="text ">
+          <p><span>--</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u659" class="ax_default box_1">
+        <div id="u659_div" class=""></div>
+        <div id="u659_text" class="text ">
+          <p><span>--</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u660" class="ax_default box_1">
+        <div id="u660_div" class=""></div>
+        <div id="u660_text" class="text ">
+          <p><span>CHF</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u661" class="ax_default box_1">
+        <div id="u661_div" class=""></div>
+        <div id="u661_text" class="text ">
+          <p><span>FRF</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u662" class="ax_default box_1">
+        <div id="u662_div" class=""></div>
+        <div id="u662_text" class="text ">
+          <p><span>MOP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u663" class="ax_default box_1">
+        <div id="u663_div" class=""></div>
+        <div id="u663_text" class="text ">
+          <p><span>TWD</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u664" class="ax_default box_1">
+        <div id="u664_div" class=""></div>
+        <div id="u664_text" class="text ">
+          <p><span>PHP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u665" class="ax_default label">
+        <div id="u665_div" class=""></div>
+        <div id="u665_text" class="text ">
+          <p><span>币种</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u666" class="ax_default box_1">
+        <div id="u666_div" class=""></div>
+        <div id="u666_text" class="text ">
+          <p><span>PHP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u667" class="ax_default box_1">
+        <div id="u667_div" class=""></div>
+        <div id="u667_text" class="text ">
+          <p><span>PHP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u668" class="ax_default label">
+        <div id="u668_div" class=""></div>
+        <div id="u668_text" class="text ">
+          <p><span>币种</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u669" class="ax_default _一级标题">
+        <div id="u669_div" class=""></div>
+        <div id="u669_text" class="text ">
+          <p><span>需求说明：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u670" class="ax_default _文本段落">
+        <div id="u670_div" class=""></div>
+        <div id="u670_text" class="text ">
+          <p><span>在商户信息列表中添加币种数据列，但该项不添加在查询条件中且仅针对商户进行标识，线路商币种信息列显示“--”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u671" class="ax_default primary_button">
+        <div id="u671_div" class=""></div>
+        <div id="u671_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u672" class="ax_default line">
+        <img id="u672_img" class="img " src="images/创建商户优化需求/u232.svg"/>
+        <div id="u672_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u673" class="ax_default label">
+        <div id="u673_div" class=""></div>
+        <div id="u673_text" class="text ">
+          <p><span>新建商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u674" class="ax_default icon">
+        <img id="u674_img" class="img " src="images/创建商户优化需求/u234.svg"/>
+        <div id="u674_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u675" class="ax_default label">
+        <div id="u675_div" class=""></div>
+        <div id="u675_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span>商户名称：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u676" class="ax_default text_field">
+        <div id="u676_div" class=""></div>
+        <input id="u676_input" type="text" value="" class="u676_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u677" class="ax_default label">
+        <div id="u677_div" class=""></div>
+        <div id="u677_text" class="text ">
+          <p><span>商户名称不可为空</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u678" class="ax_default label">
+        <div id="u678_div" class=""></div>
+        <div id="u678_text" class="text ">
+          <p><span style="color:#D9001B;">&nbsp; </span><span>商户编码：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u679" class="ax_default label">
+        <div id="u679_div" class=""></div>
+        <div id="u679_text" class="text ">
+          <p><span>6W888</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u680" class="ax_default label">
+        <div id="u680_div" class=""></div>
+        <div id="u680_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span>商户验证码类型：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (单选按钮) -->
+      <div id="u681" class="ax_default radio_button selected">
+        <label id="u681_input_label" for="u681_input" style="position: absolute; left: 0px;">
+          <img id="u681_img" class="img " src="images/后台优化/u681_selected.svg"/>
+          <div id="u681_text" class="text ">
+            <p><span>Google验证</span></p>
+          </div>
+        </label>
+        <input id="u681_input" type="radio" value="radio" name="u681" checked/>
+      </div>
+
+      <!-- Unnamed (单选按钮) -->
+      <div id="u682" class="ax_default radio_button">
+        <label id="u682_input_label" for="u682_input" style="position: absolute; left: 0px;">
+          <img id="u682_img" class="img " src="images/后台优化/u682.svg"/>
+          <div id="u682_text" class="text ">
+            <p><span>图像验证</span></p>
+          </div>
+        </label>
+        <input id="u682_input" type="radio" value="radio" name="u682"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u683" class="ax_default label">
+        <div id="u683_div" class=""></div>
+        <div id="u683_text" class="text ">
+          <p><span>&nbsp; Google验证密钥</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u684" class="ax_default label">
+        <div id="u684_div" class=""></div>
+        <div id="u684_text" class="text ">
+          <p><span>KPCTE6E6BV3GPYBK</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u685" class="ax_default icon">
+        <img id="u685_img" class="img " src="images/创建商户优化需求/u274.svg"/>
+        <div id="u685_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u686" class="ax_default label">
+        <div id="u686_div" class=""></div>
+        <div id="u686_text" class="text ">
+          <p><span>&nbsp; 限红配置：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u687" class="ax_default label">
+        <div id="u687_div" class=""></div>
+        <div id="u687_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">哈希单双</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u688" class="ax_default text_field">
+        <div id="u688_div" class=""></div>
+        <input id="u688_input" type="number" value="10" class="u688_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u689" class="ax_default text_field">
+        <div id="u689_div" class=""></div>
+        <input id="u689_input" type="number" value="200000" class="u689_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u690" class="ax_default label">
+        <div id="u690_div" class=""></div>
+        <div id="u690_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u691" class="ax_default label">
+        <div id="u691_div" class=""></div>
+        <div id="u691_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">幸运哈希</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u692" class="ax_default text_field">
+        <div id="u692_div" class=""></div>
+        <input id="u692_input" type="number" value="10" class="u692_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u693" class="ax_default text_field">
+        <div id="u693_div" class=""></div>
+        <input id="u693_input" type="number" value="200000" class="u693_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u694" class="ax_default label">
+        <div id="u694_div" class=""></div>
+        <div id="u694_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u695" class="ax_default label">
+        <div id="u695_div" class=""></div>
+        <div id="u695_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">哈希牛牛</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u696" class="ax_default text_field">
+        <div id="u696_div" class=""></div>
+        <input id="u696_input" type="number" value="10" class="u696_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u697" class="ax_default text_field">
+        <div id="u697_div" class=""></div>
+        <input id="u697_input" type="number" value="200000" class="u697_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u698" class="ax_default label">
+        <div id="u698_div" class=""></div>
+        <div id="u698_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u699" class="ax_default label">
+        <div id="u699_div" class=""></div>
+        <div id="u699_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">Hilo翻牌</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u700" class="ax_default text_field">
+        <div id="u700_div" class=""></div>
+        <input id="u700_input" type="number" value="10" class="u700_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u701" class="ax_default text_field">
+        <div id="u701_div" class=""></div>
+        <input id="u701_input" type="number" value="50000" class="u701_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u702" class="ax_default label">
+        <div id="u702_div" class=""></div>
+        <div id="u702_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u703" class="ax_default label">
+        <div id="u703_div" class=""></div>
+        <div id="u703_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">幸运庄闲</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u704" class="ax_default text_field">
+        <div id="u704_div" class=""></div>
+        <input id="u704_input" type="number" value="10" class="u704_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u705" class="ax_default text_field">
+        <div id="u705_div" class=""></div>
+        <input id="u705_input" type="number" value="200000" class="u705_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u706" class="ax_default label">
+        <div id="u706_div" class=""></div>
+        <div id="u706_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u707" class="ax_default label">
+        <div id="u707_div" class=""></div>
+        <div id="u707_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">哈希大小</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u708" class="ax_default text_field">
+        <div id="u708_div" class=""></div>
+        <input id="u708_input" type="number" value="10" class="u708_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u709" class="ax_default text_field">
+        <div id="u709_div" class=""></div>
+        <input id="u709_input" type="number" value="200000" class="u709_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u710" class="ax_default label">
+        <div id="u710_div" class=""></div>
+        <div id="u710_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u711" class="ax_default label">
+        <div id="u711_div" class=""></div>
+        <div id="u711_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">极限跳伞</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u712" class="ax_default text_field">
+        <div id="u712_div" class=""></div>
+        <input id="u712_input" type="number" value="10" class="u712_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u713" class="ax_default text_field">
+        <div id="u713_div" class=""></div>
+        <input id="u713_input" type="number" value="200000" class="u713_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u714" class="ax_default label">
+        <div id="u714_div" class=""></div>
+        <div id="u714_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u715" class="ax_default label">
+        <div id="u715_div" class=""></div>
+        <div id="u715_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">Plinko弹珠</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u716" class="ax_default text_field">
+        <div id="u716_div" class=""></div>
+        <input id="u716_input" type="number" value="10" class="u716_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u717" class="ax_default text_field">
+        <div id="u717_div" class=""></div>
+        <input id="u717_input" type="number" value="1000" class="u717_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u718" class="ax_default label">
+        <div id="u718_div" class=""></div>
+        <div id="u718_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u719" class="ax_default primary_button">
+        <div id="u719_div" class=""></div>
+        <div id="u719_text" class="text ">
+          <p><span>确定保存</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u720" class="ax_default button">
+        <div id="u720_div" class=""></div>
+        <div id="u720_text" class="text ">
+          <p><span>清空取消</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u721" class="ax_default label">
+        <div id="u721_div" class=""></div>
+        <div id="u721_text" class="text ">
+          <p><span>&nbsp; 订单回调地址：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u722" class="ax_default text_field">
+        <div id="u722_div" class=""></div>
+        <input id="u722_input" type="text" value="" class="u722_input"/>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u723" class="ax_default line">
+        <img id="u723_img" class="img " src="images/创建商户优化需求/u312.svg"/>
+        <div id="u723_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u724" class="ax_default label">
+        <div id="u724_div" class=""></div>
+        <div id="u724_text" class="text ">
+          <p><span>为保证回调成功，请确认运维人员已将该地址添加至白名单！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u725" class="ax_default icon">
+        <img id="u725_img" class="img " src="images/创建商户优化需求/u314.svg"/>
+        <div id="u725_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u726" class="ax_default label">
+        <div id="u726_div" class=""></div>
+        <div id="u726_text" class="text ">
+          <p><span style="color:#D9001B;">&nbsp; </span><span>商户币种：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u727" class="ax_default text_field">
+        <div id="u727_div" class=""></div>
+        <input id="u727_input" type="text" value="" class="u727_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u728" class="ax_default _文本段落">
+        <div id="u728_div" class=""></div>
+        <div id="u728_text" class="text ">
+          <ul><li style=""><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">编辑商户</span></li></ul><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 编辑修改商户信息时，针对币种信息也可以进行修改，不做限制；</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u729" class="ax_default primary_button">
+        <div id="u729_div" class=""></div>
+        <div id="u729_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u730" class="ax_default line">
+        <img id="u730_img" class="img " src="images/创建商户优化需求/u232.svg"/>
+        <div id="u730_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u731" class="ax_default label">
+        <div id="u731_div" class=""></div>
+        <div id="u731_text" class="text ">
+          <p><span>编辑商户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u732" class="ax_default icon">
+        <img id="u732_img" class="img " src="images/创建商户优化需求/u234.svg"/>
+        <div id="u732_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u733" class="ax_default label">
+        <div id="u733_div" class=""></div>
+        <div id="u733_text" class="text ">
+          <p><span style="color:#D9001B;">&nbsp; </span><span>商户名称：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u734" class="ax_default label">
+        <div id="u734_div" class=""></div>
+        <div id="u734_text" class="text ">
+          <p><span style="color:#D9001B;">&nbsp; </span><span>商户编码：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u735" class="ax_default label">
+        <div id="u735_div" class=""></div>
+        <div id="u735_text" class="text ">
+          <p><span>6W888</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u736" class="ax_default label">
+        <div id="u736_div" class=""></div>
+        <div id="u736_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span>商户验证码类型：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (单选按钮) -->
+      <div id="u737" class="ax_default radio_button selected">
+        <label id="u737_input_label" for="u737_input" style="position: absolute; left: 0px;">
+          <img id="u737_img" class="img " src="images/后台优化/u737_selected.svg"/>
+          <div id="u737_text" class="text ">
+            <p><span>Google验证</span></p>
+          </div>
+        </label>
+        <input id="u737_input" type="radio" value="radio" name="u737" checked/>
+      </div>
+
+      <!-- Unnamed (单选按钮) -->
+      <div id="u738" class="ax_default radio_button">
+        <label id="u738_input_label" for="u738_input" style="position: absolute; left: 0px;">
+          <img id="u738_img" class="img " src="images/后台优化/u738.svg"/>
+          <div id="u738_text" class="text ">
+            <p><span>图像验证</span></p>
+          </div>
+        </label>
+        <input id="u738_input" type="radio" value="radio" name="u738"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u739" class="ax_default label">
+        <div id="u739_div" class=""></div>
+        <div id="u739_text" class="text ">
+          <p><span>&nbsp; 限红配置：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u740" class="ax_default label">
+        <div id="u740_div" class=""></div>
+        <div id="u740_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">哈希单双</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u741" class="ax_default text_field">
+        <div id="u741_div" class=""></div>
+        <input id="u741_input" type="number" value="10" class="u741_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u742" class="ax_default text_field">
+        <div id="u742_div" class=""></div>
+        <input id="u742_input" type="number" value="200000" class="u742_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u743" class="ax_default label">
+        <div id="u743_div" class=""></div>
+        <div id="u743_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u744" class="ax_default label">
+        <div id="u744_div" class=""></div>
+        <div id="u744_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">幸运哈希</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u745" class="ax_default text_field">
+        <div id="u745_div" class=""></div>
+        <input id="u745_input" type="number" value="10" class="u745_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u746" class="ax_default text_field">
+        <div id="u746_div" class=""></div>
+        <input id="u746_input" type="number" value="200000" class="u746_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u747" class="ax_default label">
+        <div id="u747_div" class=""></div>
+        <div id="u747_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u748" class="ax_default label">
+        <div id="u748_div" class=""></div>
+        <div id="u748_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">哈希牛牛</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u749" class="ax_default text_field">
+        <div id="u749_div" class=""></div>
+        <input id="u749_input" type="number" value="10" class="u749_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u750" class="ax_default text_field">
+        <div id="u750_div" class=""></div>
+        <input id="u750_input" type="number" value="200000" class="u750_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u751" class="ax_default label">
+        <div id="u751_div" class=""></div>
+        <div id="u751_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u752" class="ax_default label">
+        <div id="u752_div" class=""></div>
+        <div id="u752_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">Hilo翻牌</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u753" class="ax_default text_field">
+        <div id="u753_div" class=""></div>
+        <input id="u753_input" type="number" value="10" class="u753_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u754" class="ax_default text_field">
+        <div id="u754_div" class=""></div>
+        <input id="u754_input" type="number" value="50000" class="u754_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u755" class="ax_default label">
+        <div id="u755_div" class=""></div>
+        <div id="u755_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u756" class="ax_default label">
+        <div id="u756_div" class=""></div>
+        <div id="u756_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">幸运庄闲</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u757" class="ax_default text_field">
+        <div id="u757_div" class=""></div>
+        <input id="u757_input" type="number" value="10" class="u757_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u758" class="ax_default text_field">
+        <div id="u758_div" class=""></div>
+        <input id="u758_input" type="number" value="200000" class="u758_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u759" class="ax_default label">
+        <div id="u759_div" class=""></div>
+        <div id="u759_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u760" class="ax_default label">
+        <div id="u760_div" class=""></div>
+        <div id="u760_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">哈希大小</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u761" class="ax_default text_field">
+        <div id="u761_div" class=""></div>
+        <input id="u761_input" type="number" value="10" class="u761_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u762" class="ax_default text_field">
+        <div id="u762_div" class=""></div>
+        <input id="u762_input" type="number" value="200000" class="u762_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u763" class="ax_default label">
+        <div id="u763_div" class=""></div>
+        <div id="u763_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u764" class="ax_default label">
+        <div id="u764_div" class=""></div>
+        <div id="u764_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">极限跳伞</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u765" class="ax_default text_field">
+        <div id="u765_div" class=""></div>
+        <input id="u765_input" type="number" value="10" class="u765_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u766" class="ax_default text_field">
+        <div id="u766_div" class=""></div>
+        <input id="u766_input" type="number" value="200000" class="u766_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u767" class="ax_default label">
+        <div id="u767_div" class=""></div>
+        <div id="u767_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u768" class="ax_default label">
+        <div id="u768_div" class=""></div>
+        <div id="u768_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">Plinko弹珠</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u769" class="ax_default text_field">
+        <div id="u769_div" class=""></div>
+        <input id="u769_input" type="number" value="10" class="u769_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u770" class="ax_default text_field">
+        <div id="u770_div" class=""></div>
+        <input id="u770_input" type="number" value="1000" class="u770_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u771" class="ax_default label">
+        <div id="u771_div" class=""></div>
+        <div id="u771_text" class="text ">
+          <p><span>-</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u772" class="ax_default primary_button">
+        <div id="u772_div" class=""></div>
+        <div id="u772_text" class="text ">
+          <p><span>确定保存</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u773" class="ax_default button">
+        <div id="u773_div" class=""></div>
+        <div id="u773_text" class="text ">
+          <p><span>清空取消</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u774" class="ax_default label">
+        <div id="u774_div" class=""></div>
+        <div id="u774_text" class="text ">
+          <p><span>aqaw0001</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u775" class="ax_default label">
+        <div id="u775_div" class=""></div>
+        <div id="u775_text" class="text ">
+          <p><span>&nbsp; 管理员账号</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u776" class="ax_default text_field disabled">
+        <div id="u776_div" class="disabled"></div>
+        <input id="u776_input" type="text" value="aqaw0001" class="u776_input" disabled/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u777" class="ax_default button">
+        <div id="u777_div" class=""></div>
+        <div id="u777_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u778" class="ax_default line">
+        <img id="u778_img" class="img " src="images/创建商户优化需求/u365.svg"/>
+        <div id="u778_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u779" class="ax_default label">
+        <div id="u779_div" class=""></div>
+        <div id="u779_text" class="text ">
+          <p><span>极限跳伞游戏参数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u780" class="ax_default label">
+        <div id="u780_div" class=""></div>
+        <div id="u780_text" class="text ">
+          <p><span>收起</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u781" class="ax_default icon">
+        <img id="u781_img" class="img " src="images/创建商户优化需求/u368.svg"/>
+        <div id="u781_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u782" class="ax_default label">
+        <div id="u782_div" class=""></div>
+        <div id="u782_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">默认投注金额</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u783" class="ax_default text_field">
+        <div id="u783_div" class=""></div>
+        <input id="u783_input" type="number" value="20" class="u783_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u784" class="ax_default label">
+        <div id="u784_div" class=""></div>
+        <div id="u784_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">单注最大盈利</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u785" class="ax_default text_field">
+        <div id="u785_div" class=""></div>
+        <input id="u785_input" type="number" value="200000" class="u785_input"/>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u786" class="ax_default icon">
+        <img id="u786_img" class="img " src="images/创建商户优化需求/u274.svg"/>
+        <div id="u786_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u787" class="ax_default label">
+        <div id="u787_div" class=""></div>
+        <div id="u787_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">最高倍数</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u788" class="ax_default text_field">
+        <div id="u788_div" class=""></div>
+        <input id="u788_input" type="number" value="1000" class="u788_input"/>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u789" class="ax_default icon">
+        <img id="u789_img" class="img " src="images/创建商户优化需求/u274.svg"/>
+        <div id="u789_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u790" class="ax_default button">
+        <div id="u790_div" class=""></div>
+        <div id="u790_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u791" class="ax_default line">
+        <img id="u791_img" class="img " src="images/创建商户优化需求/u365.svg"/>
+        <div id="u791_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u792" class="ax_default label">
+        <div id="u792_div" class=""></div>
+        <div id="u792_text" class="text ">
+          <p><span>T台美女秀游戏参数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u793" class="ax_default label">
+        <div id="u793_div" class=""></div>
+        <div id="u793_text" class="text ">
+          <p><span>收起</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u794" class="ax_default icon">
+        <img id="u794_img" class="img " src="images/创建商户优化需求/u368.svg"/>
+        <div id="u794_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u795" class="ax_default label">
+        <div id="u795_div" class=""></div>
+        <div id="u795_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">默认投注金额</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u796" class="ax_default text_field">
+        <div id="u796_div" class=""></div>
+        <input id="u796_input" type="number" value="20" class="u796_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u797" class="ax_default label">
+        <div id="u797_div" class=""></div>
+        <div id="u797_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">单注最大盈利</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u798" class="ax_default text_field">
+        <div id="u798_div" class=""></div>
+        <input id="u798_input" type="number" value="200000" class="u798_input"/>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u799" class="ax_default icon">
+        <img id="u799_img" class="img " src="images/创建商户优化需求/u274.svg"/>
+        <div id="u799_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u800" class="ax_default label">
+        <div id="u800_div" class=""></div>
+        <div id="u800_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">最高倍数</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u801" class="ax_default text_field">
+        <div id="u801_div" class=""></div>
+        <input id="u801_input" type="number" value="1000" class="u801_input"/>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u802" class="ax_default icon">
+        <img id="u802_img" class="img " src="images/创建商户优化需求/u274.svg"/>
+        <div id="u802_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u803" class="ax_default button">
+        <div id="u803_div" class=""></div>
+        <div id="u803_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u804" class="ax_default line">
+        <img id="u804_img" class="img " src="images/创建商户优化需求/u365.svg"/>
+        <div id="u804_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u805" class="ax_default label">
+        <div id="u805_div" class=""></div>
+        <div id="u805_text" class="text ">
+          <p><span>Hilo翻牌游戏参数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u806" class="ax_default label">
+        <div id="u806_div" class=""></div>
+        <div id="u806_text" class="text ">
+          <p><span>收起</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u807" class="ax_default icon">
+        <img id="u807_img" class="img " src="images/创建商户优化需求/u368.svg"/>
+        <div id="u807_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u808" class="ax_default label">
+        <div id="u808_div" class=""></div>
+        <div id="u808_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">单局最大盈利</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u809" class="ax_default text_field">
+        <div id="u809_div" class=""></div>
+        <input id="u809_input" type="number" value="200000" class="u809_input"/>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u810" class="ax_default icon">
+        <img id="u810_img" class="img " src="images/创建商户优化需求/u274.svg"/>
+        <div id="u810_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u811" class="ax_default button">
+        <div id="u811_div" class=""></div>
+        <div id="u811_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u812" class="ax_default line">
+        <img id="u812_img" class="img " src="images/创建商户优化需求/u365.svg"/>
+        <div id="u812_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u813" class="ax_default label">
+        <div id="u813_div" class=""></div>
+        <div id="u813_text" class="text ">
+          <p><span>Plinko弹珠游戏参数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u814" class="ax_default label">
+        <div id="u814_div" class=""></div>
+        <div id="u814_text" class="text ">
+          <p><span>收起</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u815" class="ax_default icon">
+        <img id="u815_img" class="img " src="images/创建商户优化需求/u368.svg"/>
+        <div id="u815_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u816" class="ax_default label">
+        <div id="u816_div" class=""></div>
+        <div id="u816_text" class="text ">
+          <p><span style="color:#D9001B;">* </span><span style="color:#000000;">默认投注金额</span><span>：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u817" class="ax_default text_field">
+        <div id="u817_div" class=""></div>
+        <input id="u817_input" type="number" value="20" class="u817_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u818" class="ax_default label">
+        <div id="u818_div" class=""></div>
+        <div id="u818_text" class="text ">
+          <p><span>&nbsp; 订单回调地址：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u819" class="ax_default text_field">
+        <div id="u819_div" class=""></div>
+        <input id="u819_input" type="text" value="" class="u819_input"/>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u820" class="ax_default line">
+        <img id="u820_img" class="img " src="images/创建商户优化需求/u312.svg"/>
+        <div id="u820_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u821" class="ax_default label">
+        <div id="u821_div" class=""></div>
+        <div id="u821_text" class="text ">
+          <p><span>为保证回调成功，请确认运维人员已将更新的地址添加至白名单！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u822" class="ax_default icon">
+        <img id="u822_img" class="img " src="images/创建商户优化需求/u314.svg"/>
+        <div id="u822_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u823" class="ax_default _文本段落">
+        <div id="u823_div" class=""></div>
+        <div id="u823_text" class="text ">
+          <ul><li style=""><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">新建商户</span></li></ul><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 在新建商户时增加币种字段，仅用于标识该商户使用的币种信息标识；</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u824" class="ax_default label">
+        <div id="u824_div" class=""></div>
+        <div id="u824_text" class="text ">
+          <p><span style="color:#D9001B;">&nbsp; </span><span>商户币种：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u825" class="ax_default text_field">
+        <div id="u825_div" class=""></div>
+        <input id="u825_input" type="text" value="CNY" class="u825_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u826" class="ax_default _一级标题">
+        <div id="u826_div" class=""></div>
+        <div id="u826_text" class="text ">
+          <p><span>商户报表模块</span></p><p><span>商户报表添加“币种”标识</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u827" class="ax_default box_2">
+        <div id="u827_div" class=""></div>
+        <div id="u827_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u828" class="ax_default _一级标题">
+        <div id="u828_div" class=""></div>
+        <div id="u828_text" class="text ">
+          <p><span>商户报表</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u829" class="ax_default primary_button">
+        <div id="u829_div" class=""></div>
+        <div id="u829_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u830" class="ax_default label">
+        <div id="u830_div" class=""></div>
+        <div id="u830_text" class="text ">
+          <p><span>商户名称/编码：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u831" class="ax_default text_field">
+        <div id="u831_div" class=""></div>
+        <input id="u831_input" type="text" value="&nbsp; 平台" class="u831_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u832" class="ax_default label">
+        <div id="u832_div" class=""></div>
+        <div id="u832_text" class="text ">
+          <p><span>统计时间：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u833" class="ax_default text_field">
+        <div id="u833_div" class=""></div>
+        <input id="u833_input" type="text" value="" class="u833_input"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u834" class="ax_default text_field">
+        <div id="u834_div" class=""></div>
+        <input id="u834_input" type="text" value="" class="u834_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u835" class="ax_default label">
+        <div id="u835_div" class=""></div>
+        <div id="u835_text" class="text ">
+          <p><span>至</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u836" class="ax_default icon">
+        <img id="u836_img" class="img " src="images/创建商户优化需求/u30.svg"/>
+        <div id="u836_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u837" class="ax_default primary_button">
+        <div id="u837_div" class=""></div>
+        <div id="u837_text" class="text ">
+          <p><span>搜索</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u838" class="ax_default primary_button">
+        <div id="u838_div" class=""></div>
+        <div id="u838_text" class="text ">
+          <p><span>重置</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u839" class="ax_default button">
+        <div id="u839_div" class=""></div>
+        <div id="u839_text" class="text ">
+          <p><span>导出Excel&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u840" class="ax_default icon">
+        <img id="u840_img" class="img " src="images/后台优化/u840.svg"/>
+        <div id="u840_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u841" class="ax_default primary_button">
+        <div id="u841_div" class=""></div>
+        <div id="u841_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (表格) -->
+      <div id="u842" class="ax_default">
+
+        <!-- Unnamed (单元格) -->
+        <div id="u843" class="ax_default table_cell1">
+          <img id="u843_img" class="img " src="images/后台优化/u843.png"/>
+          <div id="u843_text" class="text ">
+            <p><span>博宇</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u844" class="ax_default table_cell1">
+          <img id="u844_img" class="img " src="images/后台优化/u844.png"/>
+          <div id="u844_text" class="text ">
+            <p><span>CrybetoPoint</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u845" class="ax_default table_cell1">
+          <img id="u845_img" class="img " src="images/后台优化/u845.png"/>
+          <div id="u845_text" class="text ">
+            <p><span>USDT</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u846" class="ax_default table_cell1">
+          <img id="u846_img" class="img " src="images/后台优化/u846.png"/>
+          <div id="u846_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u847" class="ax_default table_cell1">
+          <img id="u847_img" class="img " src="images/后台优化/u847.png"/>
+          <div id="u847_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u848" class="ax_default table_cell1">
+          <img id="u848_img" class="img " src="images/后台优化/u848.png"/>
+          <div id="u848_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u849" class="ax_default table_cell1">
+          <img id="u849_img" class="img " src="images/后台优化/u849.png"/>
+          <div id="u849_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u850" class="ax_default table_cell1">
+          <img id="u850_img" class="img " src="images/后台优化/u850.png"/>
+          <div id="u850_text" class="text ">
+            <p><span>900.00</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u851" class="ax_default table_cell1">
+          <img id="u851_img" class="img " src="images/后台优化/u851.png"/>
+          <div id="u851_text" class="text ">
+            <p><span>-800.00</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u852" class="ax_default table_cell1">
+          <img id="u852_img" class="img " src="images/后台优化/u843.png"/>
+          <div id="u852_text" class="text ">
+            <p><span>火狐</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u853" class="ax_default table_cell1">
+          <img id="u853_img" class="img " src="images/后台优化/u844.png"/>
+          <div id="u853_text" class="text ">
+            <p><span>wagawgwa</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u854" class="ax_default table_cell1">
+          <img id="u854_img" class="img " src="images/后台优化/u845.png"/>
+          <div id="u854_text" class="text ">
+            <p><span>CNY</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u855" class="ax_default table_cell1">
+          <img id="u855_img" class="img " src="images/后台优化/u846.png"/>
+          <div id="u855_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u856" class="ax_default table_cell1">
+          <img id="u856_img" class="img " src="images/后台优化/u847.png"/>
+          <div id="u856_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u857" class="ax_default table_cell1">
+          <img id="u857_img" class="img " src="images/后台优化/u848.png"/>
+          <div id="u857_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u858" class="ax_default table_cell1">
+          <img id="u858_img" class="img " src="images/后台优化/u849.png"/>
+          <div id="u858_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u859" class="ax_default table_cell1">
+          <img id="u859_img" class="img " src="images/后台优化/u850.png"/>
+          <div id="u859_text" class="text ">
+            <p><span>900.00</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u860" class="ax_default table_cell1">
+          <img id="u860_img" class="img " src="images/后台优化/u851.png"/>
+          <div id="u860_text" class="text ">
+            <p><span>-800.00</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u861" class="ax_default table_cell1">
+          <img id="u861_img" class="img " src="images/后台优化/u861.png"/>
+          <div id="u861_text" class="text ">
+            <p><span>欧宝</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u862" class="ax_default table_cell1">
+          <img id="u862_img" class="img " src="images/后台优化/u862.png"/>
+          <div id="u862_text" class="text ">
+            <p><span>wagawgwa</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u863" class="ax_default table_cell1">
+          <img id="u863_img" class="img " src="images/后台优化/u863.png"/>
+          <div id="u863_text" class="text ">
+            <p><span>PHP</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u864" class="ax_default table_cell1">
+          <img id="u864_img" class="img " src="images/后台优化/u864.png"/>
+          <div id="u864_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u865" class="ax_default table_cell1">
+          <img id="u865_img" class="img " src="images/后台优化/u865.png"/>
+          <div id="u865_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u866" class="ax_default table_cell1">
+          <img id="u866_img" class="img " src="images/后台优化/u866.png"/>
+          <div id="u866_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u867" class="ax_default table_cell1">
+          <img id="u867_img" class="img " src="images/后台优化/u867.png"/>
+          <div id="u867_text" class="text ">
+            <p><span>100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u868" class="ax_default table_cell1">
+          <img id="u868_img" class="img " src="images/后台优化/u868.png"/>
+          <div id="u868_text" class="text ">
+            <p><span>0.00</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u869" class="ax_default table_cell1">
+          <img id="u869_img" class="img " src="images/后台优化/u869.png"/>
+          <div id="u869_text" class="text ">
+            <p><span>100.00</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u870" class="ax_default box_3">
+        <div id="u870_div" class=""></div>
+        <div id="u870_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u871" class="ax_default box_3">
+        <div id="u871_div" class=""></div>
+        <div id="u871_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u872" class="ax_default box_3">
+        <div id="u872_div" class=""></div>
+        <div id="u872_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u873" class="ax_default label">
+        <div id="u873_div" class=""></div>
+        <div id="u873_text" class="text ">
+          <p><span>商户编码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u874" class="ax_default label">
+        <div id="u874_div" class=""></div>
+        <div id="u874_text" class="text ">
+          <p><span>商户名称</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u875" class="ax_default label">
+        <div id="u875_div" class=""></div>
+        <div id="u875_text" class="text ">
+          <p><span>投注人数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u876" class="ax_default label">
+        <div id="u876_div" class=""></div>
+        <div id="u876_text" class="text ">
+          <p><span>注单次数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u877" class="ax_default label">
+        <div id="u877_div" class=""></div>
+        <div id="u877_text" class="text ">
+          <p><span>投注金额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u878" class="ax_default label">
+        <div id="u878_div" class=""></div>
+        <div id="u878_text" class="text ">
+          <p><span>有效投注</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u879" class="ax_default label">
+        <div id="u879_div" class=""></div>
+        <div id="u879_text" class="text ">
+          <p><span>返奖</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u880" class="ax_default label">
+        <div id="u880_div" class=""></div>
+        <div id="u880_text" class="text ">
+          <p><span>盈利</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u881" class="ax_default icon">
+        <img id="u881_img" class="img " src="images/创建商户优化需求/u274.svg"/>
+        <div id="u881_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u882" class="ax_default flow_shape">
+        <div id="u882_div" class=""></div>
+        <div id="u882_text" class="text ">
+          <p><span>盈利=投注金额-返奖金额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u883" class="ax_default label">
+        <div id="u883_div" class=""></div>
+        <div id="u883_text" class="text ">
+          <p><span>小计</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u884" class="ax_default label">
+        <div id="u884_div" class=""></div>
+        <div id="u884_text" class="text ">
+          <p><span>总计</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u885" class="ax_default label">
+        <div id="u885_div" class=""></div>
+        <div id="u885_text" class="text ">
+          <p><span>300</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u886" class="ax_default label">
+        <div id="u886_div" class=""></div>
+        <div id="u886_text" class="text ">
+          <p><span>300</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u887" class="ax_default label">
+        <div id="u887_div" class=""></div>
+        <div id="u887_text" class="text ">
+          <p><span>300</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u888" class="ax_default label">
+        <div id="u888_div" class=""></div>
+        <div id="u888_text" class="text ">
+          <p><span>300</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u889" class="ax_default label">
+        <div id="u889_div" class=""></div>
+        <div id="u889_text" class="text ">
+          <p><span>1800.00</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u890" class="ax_default label">
+        <div id="u890_div" class=""></div>
+        <div id="u890_text" class="text ">
+          <p><span>-1300.00</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u891" class="ax_default label">
+        <div id="u891_div" class=""></div>
+        <div id="u891_text" class="text ">
+          <p><span>300</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u892" class="ax_default label">
+        <div id="u892_div" class=""></div>
+        <div id="u892_text" class="text ">
+          <p><span>300</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u893" class="ax_default label">
+        <div id="u893_div" class=""></div>
+        <div id="u893_text" class="text ">
+          <p><span>300</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u894" class="ax_default label">
+        <div id="u894_div" class=""></div>
+        <div id="u894_text" class="text ">
+          <p><span>300</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u895" class="ax_default label">
+        <div id="u895_div" class=""></div>
+        <div id="u895_text" class="text ">
+          <p><span>1800.00</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u896" class="ax_default label">
+        <div id="u896_div" class=""></div>
+        <div id="u896_text" class="text ">
+          <p><span>-1300.00</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u897" class="ax_default label">
+        <div id="u897_div" class=""></div>
+        <div id="u897_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">需求背景：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">运营部门提出针对商户报表数据进行结算等数据规整时的需要</span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">解决方案：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">根据在商户信息模块中对商户添加的币种标识在此模块页进行显示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u898" class="ax_default _一级标题">
+        <div id="u898_div" class=""></div>
+        <div id="u898_text" class="text ">
+          <p><span>需求说明：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u899" class="ax_default label">
+        <div id="u899_div" class=""></div>
+        <div id="u899_text" class="text ">
+          <p><span>币种</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u900" class="ax_default _文本段落">
+        <div id="u900_div" class=""></div>
+        <div id="u900_text" class="text ">
+          <ul><li style=""><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">列表信息</span></li></ul><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 在列表中添加“币种”数据项并针对商户显示在商户信息模块中设置的对应的币种信息；</span></p><ul><li style=""><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">导出Excel</span></li></ul><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 在导出的Excel文件中同样添加“币种”数据；</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u901" class="ax_default _一级标题">
+        <div id="u901_div" class=""></div>
+        <div id="u901_text" class="text ">
+          <p><span>“币种”信息权限需求</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u902" class="ax_default label">
+        <div id="u902_div" class=""></div>
+        <div id="u902_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">需求背景：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">“币种”数据仅因为需要应对集团数据接口使用，因此不可让外部商户用户了解此次修改以及添加对应币种数据，以免造成需求蔓延</span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑', '微软雅黑', sans-serif;font-weight:700;">解决方案：</span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">在权限模块需要针对币种数据项进行单独权限控制，仅针对内部人员可见，针对商户信息中币种信息的修改权限由运营部门根据实际工作权限进行分配</span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 修改权限</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u903" class="ax_default box_1">
+        <div id="u903_div" class=""></div>
+        <div id="u903_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>
